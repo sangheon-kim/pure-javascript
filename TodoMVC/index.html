@@ -5,8 +5,44 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/todomvc-common@1.0.5/base.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/todomvc-app-css@2.1.2/index.css">
 </head>
 <body>
-   vfteqrwtt=
+  <!-- 
+    - 필터링된 todo 리스트를 가진 ul
+    - 완료되지 않은 todo 수를 가진 span
+    - selected 클래스를 오른쪽에 추가한 필터 유형을 가진 링크
+   -->
+   <section class="todoapp">
+     <header class="header">
+       <h1>todos</h1>
+       <input type="text" class="new-todo" placeholder="what needs to be done" autofocus="autofocus">
+     </header>
+     <section class="main">
+       <input type="checkbox" id="toggle-all" class="toggle-all">
+       <label for="toggle-all">Mark all as complete</label>
+       <ul class="todo-list"></ul>
+     </section>
+     <footer class="footer">
+       <span class="todo-count"></span>
+       <ul class="filters">
+         <li>
+           <a href="#/">All</a>
+         </li>
+         <li>
+           <a href="#/active">Active</a>
+         </li>
+         <li>
+           <a href="#/completed">Completed</a>
+         </li>
+       </ul>
+       <button class="clear-completed">Clear completed</button>
+     </footer>
+   </section>
+   <footer class="info">
+     <p>Double-click to edit a todo</p>
+   </footer>
+   <script src="dist/bundle.js"></script>
 </body>
 </html>
